@@ -16,18 +16,12 @@ problems.  They are named after the mathematician Eugene Charles Catalan
 and are defined by the 
 following recursive formula: 
  
-Write a program called Catalan which takes one argument on the command line and calls a 
+ a program called Catalan which takes one argument on the command line and calls a 
 recursive function which computes the nth Catalan number.  The program then prints out the 
 result to std::out. 
  
-For instance, 
- % catalan 4 
-Would print out: 14 
+
  
- % catalan 10 
-Would print out:  16796 
- 
-  
  
  
 Problem 2:  “The Greedy Robot” or “Lost in the Supermarket” 
@@ -40,31 +34,4 @@ Commands can be given to the robot to move one position in one of the four direc
 be on (4, 4).  The command N would move the robot one position north so a robot at position 
 (4, 4) would be at (4, 5). 
  
-Because the robot cannot move diagonally, the shortest distance between a robot at (xr, yr) and 
-a treasure at (xt, yt) is 
- 
- | xr – xt | + | yr  - yt | = ShortestPossibleDistance   
- 
-Write a recursive program which determines all the unique shortest possible paths from the 
-robot to the treasure with the following stipulation: The robot may never move in the same 
-direction more than MaxDistance times in a row.    
- 
-The input to the program will be the starting position of the robot (xr, yr), followed by the 
-position of the treasure (xt, yt), followed by the MaxDistance parameter.  Assume that all five 
-are integers and do not worry about error conditions in inputs.  Take these parameters as 
-arguments to the program.   
- 
-For instance, an input of 1 3 -2 4 2 corresponds to the robot starting at position (1, 3) and 
-needing to get to position (-2, 4) with the constraints that one can only move 2 steps in one 
-direction before having to shift to a new position.     
- 
-The output of the program should be the listing of all the unique shortest possible paths 
-followed by the number of unique paths.   The paths must follow the stipulation whereby the 
-robot cannot move in the same direction more than MaxDistance times in a row.  A path should 
-be output as a string of characters with each character corresponding to a direction the Robot 
-should move.  For instance, NNENE corresponds to having the robot move North, North, East, 
-North and East.  This would be one answer to the input: 3  3  5  6 2, which corresponds to (3,3) -
-> (5,6) with a MaxDistance of 2. 
- 
-Notice that not all combinations of robots / treasures will have a solution.  As there may not be 
-a ShortestPossibleDistance given the stipulation. For instance, 3 3 3 7 2 has shortest possible 
+
